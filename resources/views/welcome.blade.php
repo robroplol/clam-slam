@@ -18,9 +18,12 @@
       @livewireStyles  
     </head>
     <body class="antialiased">
-        <div class="flex flex-col min-h-screen justify-center items-center">
-            <h1 class="text-center text-3xl">Clam Slammer</h1>
-            <div class="grid xl:grid-cols-4 md:grid-cols-3 grid-cols-1 sm:pt-0 ">
+        <div class="flex flex-col min-h-screen py-24 items-center">
+            <h1 class="text-center text-6xl text-white">Clam Slammer</h1>
+            <h2 class="text-4xl text-white">What's the goal here?</h2>
+            <h3 class="text-2xl text-white">If someone blows a clam, you hit the button</h3>
+            <h3 class="text-2xl text-white">If someone does something rad, give 'em a little cherish</h3>
+            <div class="grid xl:grid-cols-4 md:grid-cols-3 grid-cols-1 sm:pt-0 my-4">
                 
                 @foreach ($bandmembers as $bandmember)
                 <livewire:counter :name="$bandmember->name" :clam_count="$bandmember->clam_count" :cp_count="$bandmember->cp_count" />
